@@ -1,0 +1,5 @@
+{
+  "entityName": "Advanced Micro Devices",
+  "max": { "val": 123456, "fy": "2023" },
+  "min": { "val": 98765, "fy": "2021" }
+}
