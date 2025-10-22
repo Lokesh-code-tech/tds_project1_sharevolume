@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AMD Shares Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" aria-label="Site header">
+    <div class="container">
+      <h1 id="share-entity-name" class="entity-name">AMD</h1>
+      <p id="status-text" class="status" aria-live="polite">Loading data…</p>
+    </div>
+  </header>
+
+  <main class="container" aria-label="Share outstanding data">
+    <section class="card" aria-label="Share outstanding summary">
+      <div class="stat">
+        <span class="label">Max value</span>
+        <span id="share-max-value" class="value">-</span>
+        <span id="share-max-fy" class="year">-</span>
+      </div>
+      <div class="stat">
+        <span class="label">Min value</span>
+        <span id="share-min-value" class="value">-</span>
+        <span id="share-min-fy" class="year">-</span>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Controls">
+      <button id="download-btn" disabled>Download data.json</button>
+      <p class="hint">To view data for another company, add ?CIK=XXXXXXXXXX to the URL (e.g. index.html?CIK=0001018724).</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
